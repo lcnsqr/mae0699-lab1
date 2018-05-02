@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Simulações</title>
+</head>
+<body>
+
+<div id="sim-graficos">
+<p>MAE0699 - LAB 1 - Pontos uniformemente distribuídos na superfície da esfera unitária.</p>
+<p>Luciano Antonio Siqueira - 8535467</p>
+<p>Comparação entre os métodos Aceitação/Rejeição e Box-Muller</p>
+<p>O gráfico representa a razão entre o número de pontos obtidos pelo método Box-Muller e o número de pontos obtidos por Aceitação/Rejeição. Valores acima da linha central indicam que o método Box-Muller apresentou maior número de pontos do que o método Aceitação/Rejeição no mesmo intervalo de tempo.</p>
+<svg id="graf-razao" version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<g>
+		<rect width="770" height="300" class="rectBg" />
+		<path class="linha-grade" d="M 0,150 770,150" />
+		<path id="linha-razao" d="M 0,300 770,300" class="linhaFg" />
+	</g>
+</svg>
+<p class="controles"><button name="dim-menos">Reduzir dimensão</button><button name="dim-mais">Aumentar dimensão</button></p>
+<p>Melhor em <span id="graf-dim"></span> dimensões: <span id="graf-melhor"></span></p>
+<p>Pontos por segundo:</p>
+<ul>
+<li>Box-Muller: <span id="bm-pps"></span></li>
+<li>Aceitação/Rejeição: <span id="ar-pps"></span></li>
+</ul>
+</div> <!-- sim-graficos -->
+
+<link rel="stylesheet" href="style.css" />
+<script src="op.js"></script>
+<script src="index.js"></script>
+<script async src="bin.js"></script>
+</body>
+</html>

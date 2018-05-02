@@ -1,0 +1,78 @@
+body {
+	font-family: Monospace;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	background-color: #fff;
+	color: #2d2d2d;
+}
+
+#sim-campos {
+	width: 15em;
+	float: left;
+}
+#sim-campos > p {
+	font-size: .8em;
+}
+#sim-campos-form label {
+	font-size: .8em;
+}
+#sim-campos-form input[type=text] {
+	width: 4em;
+}
+#sim-campos-form > p {
+	text-align: right;
+}
+.parametro {
+	margin-bottom: 1em;
+	border-bottom: 1px solid #eeeeec;
+}
+.par-label {
+	float: left;
+	clear: left;
+	width: 10em;
+}
+.par-label p {
+	margin: 0;
+}
+.par-input {
+	margin-left: 10em;
+}
+.parametro hr {
+	clear: left;
+	height: 1;
+	margin: 0;
+	border-width: 0;
+}
+
+#sim-graficos {
+	margin-left: 1em;
+	width: 800px;
+}
+#sim-graficos > svg {
+	height: 300px; 
+	z-index: -1;
+	border: 1px solid #eeeeec;
+}
+
+svg#graf-razao {
+	left: 0; 
+	width: 770px;
+}
+svg .rectBg {
+	fill: #eeeeec;
+	stroke: #d3d7cf;
+}
+svg .linhaFg{
+	fill:none;
+	stroke:#009100;
+	stroke-width:4;
+	stroke-linecap:butt;
+	stroke-linejoin:round;
+}
+svg .linha-grade{
+	fill:none;
+	stroke:#444;
+}
+p.controles {
+	text-align: right;
+	padding-right: 2em;
+}
