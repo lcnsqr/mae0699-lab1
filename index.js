@@ -121,7 +121,7 @@ var Module = {
 			// Checar infinito
 			if (razao == Number.POSITIVE_INFINITY || razao == Number.NEGATIVE_INFINITY) return;
 			// Atualizar exibição
-			document.querySelector("#graf-dim").textContent = dim;
+			document.querySelector("#graf-dim").textContent = ( dim > 1 ) ? dim + " dimensões" : dim + " dimensão";
 			if (gerados[0] > gerados[1]){
 				document.querySelector("#graf-melhor").textContent = threads[0].nome;
 			}
@@ -176,7 +176,7 @@ document.querySelector("button[name='dim-menos']").addEventListener("click", fun
 	if ( dim == 1 ) return;
 	dim--;
 	// Atualizar exibição da contagem das dimensões
-	document.querySelector("#graf-dim").textContent = dim;
+	document.querySelector("#graf-dim").textContent = ( dim > 1 ) ? dim + " dimensões" : dim + " dimensão";
 	// Recomeçar com o novo parâmetro
 	encerrar();
 	iniciar();
@@ -186,7 +186,7 @@ document.querySelector("button[name='dim-mais']").addEventListener("click", func
 	if ( dim == 6 ) return;
 	dim++;
 	// Atualizar exibição da contagem das dimensões
-	document.querySelector("#graf-dim").textContent = dim;
+	document.querySelector("#graf-dim").textContent = ( dim > 1 ) ? dim + " dimensões" : dim + " dimensão";
 	// Recomeçar com o novo parâmetro
 	encerrar();
 	iniciar();
