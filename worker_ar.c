@@ -8,7 +8,7 @@ float u(){
 }
 
 // Projetar vetor v na superfície da esfera de raio 1
-// e guarfar o resultado no vetor w. Dimensão n.
+// e guardar o resultado no vetor w. Dimensão n.
 void projetar(float *v, float *w, int n){
 	float s = 0;
 	for (int i = 0; i < n; i++) s += pow(v[i],2);
@@ -31,7 +31,7 @@ void ponto(float *p, int n){
 }
 
 // Gerar pontos uniformemente distribuídos na superfície 
-// da esfera do R^n utilizando o método Box-Muller
+// da esfera do R^n utilizando o método Aceitação-Rejeição
 void EMSCRIPTEN_KEEPALIVE ar(char *buffer, int size){
 	// Quantidade de pontos
 	int *m = (int*)buffer;
